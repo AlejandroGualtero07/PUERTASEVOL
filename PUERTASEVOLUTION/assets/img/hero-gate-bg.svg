@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b30" />
+      <stop offset="55%" stop-color="#142847" />
+      <stop offset="100%" stop-color="#1f4277" />
+    </linearGradient>
+    <radialGradient id="skyGlow" cx="76%" cy="40%" r="46%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#142847" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="62%" cy="68%" r="34%">
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#142847" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Refined Slate-Navy Architectural Background -->
+  <rect width="1600" height="900" fill="url(#skyGrad)" />
+  <rect width="1600" height="900" fill="url(#skyGlow)" />
+  <rect width="1600" height="900" fill="url(#goldGlow)" />
+
+  <!-- Subtle Blueprint Grid -->
+  <g stroke="#7dd3fc" stroke-opacity="0.055" stroke-width="1">
+    <path d="M0 180H1600M0 360H1600M0 540H1600M0 720H1600" />
+    <path d="M320 0V900M640 0V900M960 0V900M1280 0V900" />
+  </g>
+
+  <!-- Automated Gate Schematic (Right Side) -->
+  <g transform="translate(660, 170)" opacity="0.52">
+    <rect x="0" y="545" width="900" height="6" rx="3" fill="#38bdf8" fill-opacity="0.4" />
+    <rect x="0" y="551" width="900" height="30" fill="#0d1b30" />
+
+    <!-- Left Pillar -->
+    <rect x="30" y="130" width="95" height="415" rx="4" fill="url(#pillarGrad)" stroke="#475569" stroke-width="2" />
+    <rect x="115" y="150" width="4" height="375" rx="2" fill="#eab308" />
+
+    <!-- Right Pillar -->
+    <rect x="750" y="130" width="95" height="415" rx="4" fill="url(#pillarGrad)" stroke="#475569" stroke-width="2" />
+    <rect x="756" y="150" width="4" height="375" rx="2" fill="#38bdf8" />
+
+    <!-- Sliding Gate Frame -->
+    <rect x="135" y="170" width="605" height="365" rx="4" fill="#0f172a" fill-opacity="0.68" stroke="#60a5fa" stroke-width="2.5" />
+
+    <!-- Horizontal Architectural Louvers -->
+    <g stroke="#94a3b8" stroke-width="4" stroke-opacity="0.5">
+      <line x1="150" y1="205" x2="725" y2="205" />
+      <line x1="150" y1="235" x2="725" y2="235" />
+      <line x1="150" y1="265" x2="725" y2="265" />
+      <line x1="150" y1="295" x2="725" y2="295" />
+      <line x1="150" y1="325" x2="725" y2="325" />
+      <line x1="150" y1="355" x2="725" y2="355" />
+      <line x1="150" y1="385" x2="725" y2="385" />
+      <line x1="150" y1="415" x2="725" y2="415" />
+      <line x1="150" y1="445" x2="725" y2="445" />
+      <line x1="150" y1="475" x2="725" y2="475" />
+      <line x1="150" y1="505" x2="725" y2="505" />
+    </g>
+
+    <!-- Motor Housing & Gear -->
+    <rect x="145" y="455" width="110" height="80" rx="8" fill="#1f4277" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="200" cy="495" r="22" fill="#0d1b30" stroke="#eab308" stroke-width="3" stroke-dasharray="6 4" />
+    <circle cx="200" cy="495" r="8" fill="#38bdf8" />
+
+    <!-- Motion Vector Arrows -->
+    <path d="M330 350H540" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="8 6" />
+    <path d="M525 340L545 350L525 360" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Beacon Warning Light -->
+    <rect x="65" y="108" width="24" height="22" rx="6" fill="#eab308" />
+    <circle cx="77" cy="112" r="28" fill="#eab308" fill-opacity="0.16" />
+  </g>
+</svg>
